@@ -8,16 +8,50 @@ import whatsappIcon from './assets/whats verde.png'
 
 const skills = [
   'Python',
+  'SQL',
   'JavaScript',
   'React',
-  'SQL',
   'Flutter',
   'Firebase',
-  'GitHub',
-  'Arquitetura de Software',
+  'Git/GitHub',
 ]
 
-const highlights = [
+const projects = [
+  {
+    number: '01',
+    title: 'QueroPro',
+    subtitle: 'Marketplace de serviços sob demanda',
+    description:
+      'Projeto inicialmente idealizado e desenvolvido no contexto acadêmico da FACENS e posteriormente retomado para evolução em um novo contexto, com trabalho colaborativo e novos requisitos.',
+    concepts: 'Clientes e profissionais, geolocalização, disponibilidade, chamados, avaliações, score, regras de negócio, banco de dados e segurança.',
+  },
+  {
+    number: '02',
+    title: 'UrbiTech',
+    subtitle: 'Gestão inteligente de mobilidade urbana',
+    description:
+      'Projeto conceitual voltado à utilização de dados e tecnologia na gestão de mobilidade urbana, considerando coleta de informações, análise de lotação e alertas para apoiar decisões sobre gestão de frotas.',
+    concepts: 'Python, modelagem de dados, regras de negócio e análise preditiva.',
+  },
+  {
+    number: '03',
+    title: 'Reino Defense',
+    subtitle: 'Lógica e desenvolvimento de software',
+    description:
+      'Projeto prático desenvolvido em equipe para exercitar lógica de programação, organização de código e construção de uma experiência interativa.',
+    concepts: 'JavaScript, lógica de programação e desenvolvimento colaborativo.',
+  },
+  {
+    number: '04',
+    title: 'Celsoflix',
+    subtitle: 'Aplicação web',
+    description:
+      'Projeto web desenvolvido em equipe para praticar construção de interfaces, organização de informações e integração entre componentes.',
+    concepts: 'React, JavaScript, consumo de dados e experiência do usuário.',
+  },
+]
+
+const journeyHighlights = [
   {
     title: 'Projeto para banca na Facens',
     image: facensImage,
@@ -42,12 +76,13 @@ function App() {
       <header className="topbar">
         <div className="brand-wrap">
           <div className="brand">Celso Batista</div>
-          <span className="react-pill">React</span>
+            <span className="react-pill">ADS • TI</span>
         </div>
         <nav className="nav" aria-label="Navegação principal">
           <a href="#inicio">Início</a>
           <a href="#sobre">Sobre</a>
-          <a href="#destaques">Destaques</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#trajetoria">Trajetória</a>
           <a href="#contato">Contato</a>
         </nav>
       </header>
@@ -58,14 +93,15 @@ function App() {
             <p className="eyebrow">Olá, eu sou</p>
             <h1>
               Celso Batista
-              <span> | Tecnólogo em ADS</span>
+              <span>Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
             </h1>
             <p className="lead">
-              Desenvolvedor Backend &amp; Analista de Dados | Python, SQL e Arquitetura de Software.<br /><br />
-              Profissional de 52 anos, residente em Ibiúna/SP, com uma trajetória marcada pelo trabalho árduo,
-              resiliência e visão empreendedora. Unindo maturidade profissional com formação técnica atualizada,
-              atuo no desenvolvimento de sistemas web e mobile, modelagem de banco de dados, lógica de programação,
-              análise de requisitos e soluções digitais orientadas por impacto real.
+              <strong>Análise de Sistemas <span className="lead__separator">•</span> Dados <span className="lead__separator">•</span> Projetos de Software</strong>
+              <br /><br />
+              Profissional em transição de carreira para Tecnologia, com formação em ADS e experiência de décadas em
+              trabalho, empreendedorismo, atendimento a clientes, gestão operacional e resolução de problemas.
+              Atualmente desenvolvo projetos utilizando Python, SQL, JavaScript, Flutter e Firebase, enquanto aprofundo
+              meus conhecimentos em programação, dados e inteligência artificial.
             </p>
 
             <div className="hero__badges" aria-label="Principais habilidades">
@@ -77,11 +113,11 @@ function App() {
             </div>
 
             <div className="cta-row">
-              <a href="#contato" className="button button--primary">
-                Fale comigo
+              <a href="#projetos" className="button button--primary">
+                Conheça meus projetos
               </a>
-              <a href="#sobre" className="button button--secondary">
-                Sobre mim
+              <a href="#contato" className="button button--secondary">
+                Vamos conversar
               </a>
             </div>
           </div>
@@ -100,45 +136,61 @@ function App() {
           <div className="about-grid">
             <div className="about-card">
               <p>
-                Minha trajetória é pautada pela ética, pelo trabalho prático e pelo espírito empreendedor. Durante
-                anos, atuei em funções essenciais que moldaram minha resiliência e, posteriormente, administrei meu
-                próprio negócio no ramo automotivo, onde adquiri ampla bagagem em gestão operacional, negociação,
-                atendimento ao cliente e resolução de problemas sob pressão.
+                Minha trajetória profissional foi construída ao longo de décadas de trabalho, incluindo experiência
+                como empreendedor no setor automotivo. Nesse período, atuei diretamente com clientes, fornecedores,
+                equipe, operação e resolução de problemas.
               </p>
             </div>
 
             <div className="about-card">
               <p>
-                Casado e pai de dois filhos dos quais me orgulho muito, valorizo a tranquilidade do lar, o convívio
-                familiar e o contato com a natureza. Sou cristão, palmeirense, apreciador de pesca esportiva e
-                entusiasta do universo de jogos digitais e cinema. Tenho uma postura analítica e ponderada: valorizo
-                a escuta ativa para compreender cenários complexos antes de tomar decisões, mantendo relacionamentos
-                pautados pelo respeito e pela confiança.
+                Essa vivência me proporcionou uma visão prática de processos, necessidades de negócio e experiência
+                do usuário. Tenho uma postura analítica e ponderada, valorizando a escuta ativa para compreender
+                cenários complexos antes de propor decisões e soluções.
               </p>
             </div>
 
             <div className="about-card about-card--highlight">
               <p>
-                Movido pela paixão por inovação e pelo desejo constante de me superar, concluí a graduação em
-                Análise e Desenvolvimento de Sistemas pelo Centro Universitário Facens e sigo me aprimorando no
-                programa Dev. Full Stack Jr. (Codifica Edu). Durante minha formação, idealizei e desenvolvi projetos
-                práticos completos, como KeroPro, UrbisTech, Reino Defense e Celsoflix. Uno a maturidade
-                profissional de uma vida de trabalho com a capacidade técnica atualizada em desenvolvimento de
-                sistemas. Estou pronto para novos desafios no mercado de tecnologia, entregando código limpo,
-                lógica eficiente e soluções de alto impacto.
+                Concluí a graduação em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Facens e sigo
+                me aprimorando no programa Dev. Full Stack Jr. (Codifica Edu). Durante minha formação, idealizei e
+                participei do desenvolvimento de projetos práticos em equipe. Hoje, uno experiência empresarial,
+                formação em tecnologia e vontade de transformar problemas e necessidades em soluções utilizando
+                tecnologia.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="section" id="destaques">
+        <section className="section projects" id="projetos">
           <div className="section__heading">
-            <p className="eyebrow">Destaques</p>
-            <h2>Momentos marcantes da minha jornada</h2>
+            <p className="eyebrow">Projetos em destaque</p>
+            <h2>Soluções pensadas a partir de problemas reais</h2>
+          </div>
+
+          <div className="projects-grid">
+            {projects.map((project) => (
+              <article className="project-card" key={project.title}>
+                <span className="project-card__number">{project.number}</span>
+                <div>
+                  <p className="project-card__subtitle">{project.subtitle}</p>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <p className="project-card__concepts"><strong>Conceitos:</strong> {project.concepts}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="trajetoria">
+          <div className="section__heading">
+            <p className="eyebrow">Minha trajetória</p>
+            <h2>Experiência, formação e novos caminhos</h2>
           </div>
 
           <div className="highlights-grid">
-            {highlights.map((item) => (
+            {journeyHighlights.map((item) => (
               <article className="highlight-card" key={item.title}>
                 <img src={item.image} alt={item.title} className="highlight-card__image" />
                 <div className="highlight-card__content">

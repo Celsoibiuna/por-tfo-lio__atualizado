@@ -94,7 +94,9 @@
 
 .hero h1 span {
   display: block;
-  font-size: 0.55em;
+  max-width: 720px;
+  font-size: 0.34em;
+  line-height: 1.35;
   color: #7dd3fc;
   margin-top: 10px;
 }
@@ -105,6 +107,16 @@
   line-height: 1.8;
   color: #dbeafe;
   max-width: 660px;
+}
+
+.lead strong {
+  color: #f8fafc;
+  font-size: 1.08em;
+}
+
+.lead__separator {
+  color: #7dd3fc;
+  padding: 0 0.25rem;
 }
 
 .hero__badges {
@@ -211,6 +223,63 @@
   gap: 24px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  min-height: 300px;
+  padding: 26px;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.84), rgba(14, 116, 144, 0.14));
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.18);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(125, 211, 252, 0.65);
+}
+
+.project-card__number {
+  color: #7dd3fc;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.project-card__subtitle {
+  margin-bottom: 8px;
+  color: #7dd3fc;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  margin: 0 0 14px;
+  color: #f8fafc;
+  font-size: 1.45rem;
+}
+
+.project-card p {
+  color: #dbeafe;
+  line-height: 1.7;
+}
+
+.project-card__concepts {
+  margin-top: 18px;
+  color: #bae6fd !important;
+  font-size: 0.9rem;
+}
+
 .highlight-card {
   overflow: hidden;
   border-radius: 20px;
@@ -297,7 +366,8 @@
 @media (max-width: 900px) {
   .hero,
   .about-grid,
-  .highlights-grid {
+  .highlights-grid,
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
@@ -315,6 +385,10 @@
 
   .hero {
     padding-top: 40px;
+  }
+
+  .hero h1 span {
+    font-size: 0.42em;
   }
 
   .cta-row {
