@@ -17,6 +17,8 @@ const projects = [
       'Encontrar profissionais para serviços técnicos pode ser um processo pouco organizado, principalmente quando existe necessidade de rapidez, localização e confiança entre cliente e profissional.',
     solution:
       'O KeroPro foi idealizado como uma plataforma que conecta clientes a profissionais de serviços sob demanda. A solução considera disponibilidade, localização, solicitação de atendimento e acompanhamento do deslocamento em tempo real, além de diferentes níveis de urgência, autenticação, certificados, avaliações e pontuação.',
+    evolution:
+      'Inicialmente idealizado e desenvolvido em contexto acadêmico na FACENS, o projeto foi posteriormente retomado e evoluído no contexto da +praTi, com revisão da proposta, dos requisitos e das possibilidades de aplicação.',
     technologies: 'Flutter • Dart • Firebase • Google Maps API • Git/GitHub',
     role:
       'Idealizador do projeto e participante do desenvolvimento em equipe. Contribuí para a definição da solução, discussão de requisitos e evolução do projeto.',
@@ -25,12 +27,12 @@ const projects = [
   },
   {
     number: '02',
-    title: 'Urbistech',
+    title: 'UrbiTech',
     subtitle: 'Gestão inteligente de mobilidade urbana',
     problem:
       'A gestão do transporte público precisa lidar com situações que mudam constantemente, como concentração de passageiros, alterações na demanda e problemas na frota.',
     solution:
-      'O Urbistech é um projeto conceitual voltado à gestão inteligente da mobilidade urbana. A proposta utiliza informações coletadas por sensores e câmeras para identificar situações como aumento da concentração de passageiros e gerar alertas que apoiem decisões relacionadas à gestão da frota.',
+      'O UrbiTech é um projeto conceitual voltado à gestão inteligente da mobilidade urbana. A proposta utiliza dados coletados por sensores e câmeras para identificar situações como aumento da concentração de passageiros e gerar alertas que apoiem decisões relacionadas à gestão da frota.',
     technologies: 'Python • Modelagem de Dados • Regras de Negócio • Análise de Dados',
     role:
       'Idealizador do projeto e participante do desenvolvimento em equipe, contribuindo para a concepção da solução e definição de sua lógica de funcionamento.',
@@ -122,7 +124,8 @@ function App() {
               <br />
               Profissional em transição de carreira para Tecnologia, com formação em Análise e Desenvolvimento de
               Sistemas e experiência de décadas em trabalho, empreendedorismo, atendimento a clientes, gestão
-              operacional e resolução de problemas. Atualmente desenvolvo projetos utilizando Python, SQL, JavaScript,
+              operacional e resolução de problemas. Atualmente venho desenvolvendo projetos práticos utilizando Python,
+              SQL, JavaScript,
               Flutter e Firebase, enquanto aprofundo meus conhecimentos em programação, dados e inteligência artificial.
               <br />
               <br />
@@ -181,8 +184,8 @@ function App() {
                 Concluí a graduação em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Facens e sigo me
                 aprimorando em programação, dados e inteligência artificial. Durante minha formação, idealizei e
                 participei do desenvolvimento de projetos práticos em equipe. Hoje, busco unir experiência profissional,
-                formação em tecnologia e capacidade de aprender continuamente para transformar problemas e necessidades
-                em soluções.
+                formação em tecnologia e capacidade de aprender continuamente para compreender problemas, analisar
+                necessidades e contribuir para a construção de soluções.
               </p>
             </div>
           </div>
@@ -196,7 +199,10 @@ function App() {
 
           <div className="projects-grid">
             {projects.map((project) => (
-              <article className="project-card" key={project.title}>
+              <article
+                className={`project-card${project.title === 'KeroPro' ? ' project-card--featured' : ''}`}
+                key={project.title}
+              >
                 <span className="project-card__number">{project.number}</span>
                 <div className="project-card__body">
                   <p className="project-card__subtitle">{project.subtitle}</p>
@@ -214,6 +220,13 @@ function App() {
 
                   <h4>Solução</h4>
                   <p>{project.solution}</p>
+
+                  {project.evolution && (
+                    <>
+                      <h4>Evolução do projeto</h4>
+                      <p>{project.evolution}</p>
+                    </>
+                  )}
 
                   <h4>Tecnologias</h4>
                   <p>{project.technologies}</p>
@@ -239,15 +252,27 @@ function App() {
             <div className="trajectory-timeline">
               <div className="timeline-item">
                 <span className="timeline-step">Experiência profissional</span>
-                <p>Décadas de trabalho, empreendedorismo, atendimento, negociação, operação e resolução de problemas.</p>
+                <p>Décadas de trabalho com atendimento, negociação, operação, gestão e resolução de problemas.</p>
+              </div>
+              <div className="timeline-item">
+                <span className="timeline-step">Empreendedorismo no ramo automotivo</span>
+                <p>Experiência prática na condução de um negócio, relacionamento com clientes, fornecedores e equipe.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">Retomada dos estudos</span>
-                <p>Conclusão do Ensino Médio pelo ENCCEJA.</p>
+                <p>Retorno à formação escolar e conclusão do Ensino Médio por meio do ENCCEJA.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">FACENS — ADS</span>
-                <p>Formação em Análise e Desenvolvimento de Sistemas e participação em projetos acadêmicos.</p>
+                <p>Formação em Análise e Desenvolvimento de Sistemas, com participação em projetos acadêmicos.</p>
+              </div>
+              <div className="timeline-item">
+                <span className="timeline-step">Projetos acadêmicos</span>
+                <p>Idealização e desenvolvimento em equipe de soluções como KeroPro, UrbiTech e Reino Defense.</p>
+              </div>
+              <div className="timeline-item">
+                <span className="timeline-step">+praTi</span>
+                <p>Retomada e evolução do KeroPro em um novo contexto de aprendizagem e prática profissional.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">Transição para Tecnologia</span>
