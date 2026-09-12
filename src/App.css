@@ -136,6 +136,14 @@
   color: #e0f2fe;
   font-weight: 600;
   font-size: 0.9rem;
+  transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.badge:hover {
+  color: #ffffff;
+  border-color: rgba(125, 211, 252, 0.9);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
+  transform: translateY(-2px);
 }
 
 .cta-row {
