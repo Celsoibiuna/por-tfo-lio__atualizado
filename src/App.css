@@ -141,6 +141,7 @@
 
 .badge:hover {
   color: #ffffff;
+  background: rgba(14, 116, 144, 0.28);
   border-color: rgba(125, 211, 252, 0.9);
   box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
   transform: translateY(-2px);
@@ -319,6 +320,7 @@
 
 .project-card:hover {
   transform: translateY(-3px);
+  background: linear-gradient(145deg, rgba(14, 116, 144, 0.3), rgba(14, 116, 144, 0.22));
   border-color: rgba(125, 211, 252, 0.65);
 }
 
@@ -386,6 +388,7 @@
 
 .highlight-card:hover {
   transform: translateY(-2px);
+  background: rgba(14, 116, 144, 0.28);
   border-color: rgba(125, 211, 252, 0.45);
 }
 
@@ -449,6 +452,7 @@
 
 .contact__link:hover {
   transform: translateY(-1px);
+  background: rgba(14, 116, 144, 0.28);
   color: #7dd3fc;
   border-color: rgba(125, 211, 252, 0.7);
   box-shadow: 0 12px 22px rgba(37, 99, 235, 0.2);
