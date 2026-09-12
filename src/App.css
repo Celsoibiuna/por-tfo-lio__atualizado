@@ -403,6 +403,25 @@
   border-bottom: 1px solid rgba(148, 163, 184, 0.14);
 }
 
+.highlight-card__image-link {
+  display: block;
+  text-decoration: none;
+}
+
+.highlight-card__link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #7dd3fc;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.highlight-card__link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 14px rgba(125, 211, 252, 0.55);
+}
+
 .highlight-card__content {
   padding: 20px 20px 24px;
 }

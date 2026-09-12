@@ -85,6 +85,7 @@ const journeyHighlights = [
     title: 'Formatura com Tiago Henrique',
     image: formaturaImage,
     description: '06/08/2026 — momento especial de conquista e celebração junto à família.',
+    url: 'https://www.linkedin.com/feed/update/urn:li:activity:7491511975617695744/',
   },
 ]
 
@@ -292,10 +293,27 @@ function App() {
             <div className="highlights-grid">
               {journeyHighlights.map((item) => (
                 <article className="highlight-card" key={item.title}>
-                  <img src={item.image} alt={item.title} className="highlight-card__image" />
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="highlight-card__image-link"
+                      aria-label={`Abrir publicação sobre ${item.title} no LinkedIn`}
+                    >
+                      <img src={item.image} alt={item.title} className="highlight-card__image" />
+                    </a>
+                  ) : (
+                    <img src={item.image} alt={item.title} className="highlight-card__image" />
+                  )}
                   <div className="highlight-card__content">
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
+                    {item.url && (
+                      <a href={item.url} target="_blank" rel="noreferrer" className="highlight-card__link">
+                        Ver publicação no LinkedIn
+                      </a>
+                    )}
                   </div>
                 </article>
               ))}
