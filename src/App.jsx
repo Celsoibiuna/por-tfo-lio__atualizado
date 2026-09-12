@@ -18,8 +18,8 @@ const projects = [
     solution:
       'O KeroPro foi idealizado como uma plataforma que conecta clientes a profissionais de serviços sob demanda. A solução considera disponibilidade, localização, solicitação de atendimento e acompanhamento do deslocamento em tempo real, além de diferentes níveis de urgência, autenticação, certificados, avaliações e pontuação.',
     evolution:
-      'Inicialmente idealizado e desenvolvido em contexto acadêmico na FACENS, o projeto foi posteriormente retomado e evoluído no contexto da +praTi, com revisão da proposta, dos requisitos e das possibilidades de aplicação.',
-    technologies: 'Flutter • Dart • Firebase • Google Maps API • Git/GitHub',
+      'Inicialmente idealizado por mim durante minha formação na FACENS, o projeto teve uma primeira versão acadêmica desenvolvida por uma equipe de cinco pessoas. Posteriormente, foi retomado e evoluído no contexto da +praTi, em uma equipe de sete pessoas no total, com revisão da proposta, dos requisitos e das possibilidades de aplicação.',
+    technologies: 'Flutter • Dart • Firebase • Google Maps API • Git/GitHub • keropro-api',
     role:
       'Idealizador do projeto e participante do desenvolvimento em equipe. Contribuí para a definição da solução, discussão de requisitos e evolução do projeto.',
     learning:
@@ -28,44 +28,44 @@ const projects = [
   {
     number: '02',
     title: 'UrbiTech',
-    subtitle: 'Gestão inteligente de mobilidade urbana',
+    subtitle: 'Gestão Inteligente de Mobilidade Urbana',
     problem:
       'A gestão do transporte público precisa lidar com situações que mudam constantemente, como concentração de passageiros, alterações na demanda e problemas na frota.',
     solution:
-      'O UrbiTech é um projeto conceitual voltado à gestão inteligente da mobilidade urbana. A proposta utiliza dados coletados por sensores e câmeras para identificar situações como aumento da concentração de passageiros e gerar alertas que apoiem decisões relacionadas à gestão da frota.',
-    technologies: 'Python • Modelagem de Dados • Regras de Negócio • Análise de Dados',
+      'O UrbiTech é um projeto conceitual relacionado à mobilidade urbana. A proposta considera informações provenientes de sensores e câmeras para identificar situações como concentração de passageiros em pontos de ônibus, alterações na demanda e problemas na frota, podendo gerar alertas para apoiar decisões do gestor, como avaliar o envio de outro ônibus.',
+    technologies: 'Python • Modelagem de Dados • Regras de Negócio • Análise de Dados • Conceitos de Análise e Predição',
     role:
-      'Idealizador do projeto e participante do desenvolvimento em equipe, contribuindo para a concepção da solução e definição de sua lógica de funcionamento.',
+      'Idealizador/contribuidor da proposta e participante do desenvolvimento em equipe, com contribuição na concepção da solução e na definição de sua lógica.',
     learning:
       'O projeto ampliou minha visão sobre como dados podem ser utilizados para identificar situações, gerar informações relevantes e apoiar decisões. Também permitiu compreender melhor a relação entre dados, regras de negócio e necessidades de gestão.',
   },
   {
     number: '03',
     title: 'Reino Defense',
-    subtitle: 'Jogo 2D mobile',
+    subtitle: 'Jogo 2D Mobile',
     problem:
       'O desenvolvimento de um jogo envolve diversos elementos funcionando simultaneamente, como movimentação, colisões, ondas de inimigos, interação entre componentes e controle dos estados da aplicação.',
     solution:
-      'O Reino Defense é um projeto desenvolvido em equipe no formato tower defense, no qual o jogador enfrenta ondas de inimigos utilizando elementos de defesa. O projeto envolve mecânicas de jogo, renderização 2D, detecção de colisões e controle dos estados da aplicação.',
+      'O Reino Defense é um projeto individual no formato tower defense, no qual o jogador enfrenta ondas de inimigos utilizando elementos de defesa. O projeto envolve movimentação, colisões, física 2D, renderização de sprites, controle de estados, interação entre componentes e mecânicas de jogo.',
     technologies: 'Flutter • Dart • Flame Engine • Git/GitHub',
     role:
-      'Participação no desenvolvimento do projeto em equipe, contribuindo para a implementação e integração das funcionalidades.',
+      'Desenvolvimento individual do projeto, com foco na implementação das mecânicas de jogo, lógica de programação, integração dos componentes e funcionamento da aplicação.',
     learning:
-      'O projeto ajudou a fortalecer minha compreensão de lógica de programação, estruturas de controle, organização de código e interação entre componentes de uma aplicação, além da experiência com uma engine 2D e desenvolvimento colaborativo.',
+      'O projeto ajudou a fortalecer minha compreensão de lógica de programação, estruturas de controle, organização do código, interação entre componentes, implementação de funcionalidades, utilização de uma engine 2D e organização de um projeto individual.',
   },
   {
     number: '04',
     title: 'Celsoflix',
-    subtitle: 'Aplicação web responsiva',
+    subtitle: 'Aplicação Web Responsiva',
     problem:
       'Criar uma interface web inspirada em plataformas de streaming, com organização de conteúdo e experiência adequada a diferentes tamanhos de tela.',
     solution:
       'O Celsoflix é uma aplicação web responsiva com elementos de interface inspirados em serviços de streaming, incluindo organização visual de conteúdos, carrosséis e interações dinâmicas.',
     technologies: 'HTML5 • CSS3 • JavaScript • React • Vercel',
     role:
-      'Projeto prático desenvolvido para exercitar desenvolvimento de interfaces web, responsividade e organização de componentes.',
+      'Desenvolvimento individual do projeto, com foco na construção da interface web, responsividade, organização dos componentes e implementação das interações.',
     learning:
-      'O projeto permitiu praticar desenvolvimento responsivo, manipulação do DOM, organização de componentes visuais e criação de interações utilizando JavaScript e React.',
+      'O projeto permitiu praticar desenvolvimento web responsivo, JavaScript, manipulação do DOM, organização de componentes, utilização de React, implementação de interações e organização de uma aplicação web.',
   },
 ]
 
@@ -183,10 +183,12 @@ function App() {
             <div className="about-card about-card--highlight">
               <p>
                 Concluí a graduação em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Facens e sigo me
-                aprimorando em programação, dados e inteligência artificial. Durante minha formação, idealizei e
-                participei do desenvolvimento de projetos práticos em equipe. Hoje, busco unir experiência profissional,
-                formação em tecnologia e capacidade de aprender continuamente para compreender problemas, analisar
-                necessidades e contribuir para a construção de soluções.
+                aprimorando em programação, dados e inteligência artificial. Durante minha formação, participei e
+                desenvolvi projetos práticos em diferentes formatos. Também utilizo ferramentas de inteligência
+                artificial como apoio aos estudos e ao desenvolvimento, sem substituir a compreensão dos problemas e
+                das soluções. Hoje, busco unir experiência profissional, formação em tecnologia e capacidade de
+                aprender continuamente para compreender problemas, analisar necessidades e contribuir para a
+                construção de soluções.
               </p>
             </div>
           </div>
@@ -225,6 +227,10 @@ function App() {
                   <h4>Tecnologias</h4>
                   <p>{project.technologies}</p>
 
+                  {project.title === 'KeroPro' && (
+                    <p className="project-card__note">Repositório relacionado à API/backend: keropro-api</p>
+                  )}
+
                   <h4>Meu papel</h4>
                   <p>{project.role}</p>
 
@@ -262,7 +268,7 @@ function App() {
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">Projetos acadêmicos</span>
-                <p>Idealização e desenvolvimento em equipe de soluções como KeroPro, UrbiTech e Reino Defense.</p>
+                <p>Idealização e participação em projetos acadêmicos, incluindo KeroPro, UrbiTech e Reino Defense, desenvolvidos em diferentes contextos e formatos.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">+praTi</span>
