@@ -131,9 +131,9 @@ function App() {
               Profissional em transição de carreira para Tecnologia, com formação em Análise e Desenvolvimento de
               Sistemas e experiência profissional construída ao longo de décadas de trabalho, empreendedorismo,
               atendimento a clientes, gestão
-              operacional e resolução de problemas. Atualmente venho desenvolvendo projetos práticos utilizando Python,
-              SQL, JavaScript,
-              Flutter e Firebase, enquanto aprofundo meus conhecimentos em programação, dados e inteligência artificial.
+              operacional e resolução de problemas. Atualmente, desenvolvo projetos práticos utilizando Python, SQL,
+              JavaScript, Flutter e Firebase, enquanto continuo aprofundando meus conhecimentos em programação, dados e
+              Inteligência Artificial.
               <br />
               <br />
               Minha experiência profissional também me permite trazer uma visão prática de processos, necessidades dos
