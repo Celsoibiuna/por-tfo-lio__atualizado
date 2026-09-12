@@ -63,7 +63,7 @@ const projects = [
       'O Celsoflix é uma aplicação web responsiva com elementos de interface inspirados em serviços de streaming, incluindo organização visual de conteúdos, carrosséis e interações dinâmicas.',
     technologies: 'HTML5 • CSS3 • JavaScript • React • Vercel',
     role:
-      'Projeto utilizado para praticar desenvolvimento de interfaces web e organização de componentes.',
+      'Projeto prático desenvolvido para exercitar desenvolvimento de interfaces web, responsividade e organização de componentes.',
     learning:
       'O projeto permitiu praticar desenvolvimento responsivo, manipulação do DOM, organização de componentes visuais e criação de interações utilizando JavaScript e React.',
   },
