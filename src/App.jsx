@@ -173,9 +173,9 @@ function App() {
           <div className="about-grid">
             <div className="about-card">
               <p>
-                Minha trajetória profissional foi construída ao longo de décadas de trabalho, incluindo experiência como
-                empreendedor no setor automotivo. Nesse período, atuei diretamente com clientes, fornecedores, equipe,
-                operação e resolução de problemas.
+                Minha trajetória profissional começou ainda jovem, passando por experiências em ambiente corporativo,
+                serviços automotivos e empreendedorismo. Ao longo desse caminho, desenvolvi experiência com atendimento,
+                operação, negociação, gestão de pessoas e resolução de problemas.
               </p>
             </div>
 
