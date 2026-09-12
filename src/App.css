@@ -222,6 +222,13 @@
   color: #dbeafe;
   line-height: 1.9;
   box-shadow: 0 15px 30px rgba(15, 23, 42, 0.18);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(125, 211, 252, 0.65);
+  box-shadow: 0 0 22px rgba(56, 189, 248, 0.22), 0 18px 34px rgba(15, 23, 42, 0.28);
 }
 
 .about-card--highlight {
@@ -246,6 +253,13 @@
   border-left: 2px solid rgba(125, 211, 252, 0.6);
   background: rgba(15, 23, 42, 0.52);
   border-radius: 0 16px 16px 0;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(3px);
+  border-left-color: #7dd3fc;
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.2);
 }
 
 .timeline-item::before {
