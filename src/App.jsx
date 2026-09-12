@@ -1,5 +1,6 @@
 import './App.css'
 import profileImage from './assets/foto Celso.png'
+import bancaCelsoImage from './assets/foto Celso banca.png'
 import facensImage from './assets/facens-banca.jpeg'
 import formaturaImage from './assets/formatura-tiago-06082026.png'
 import githubIcon from './assets/github.png'
@@ -70,6 +71,11 @@ const projects = [
 ]
 
 const journeyHighlights = [
+  {
+    title: 'Celso na banca acadêmica',
+    image: bancaCelsoImage,
+    description: 'Registro de um momento de apresentação acadêmica e evolução profissional.',
+  },
   {
     title: 'Projeto para banca na Facens',
     image: facensImage,
