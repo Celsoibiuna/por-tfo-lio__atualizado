@@ -123,7 +123,8 @@ function App() {
               <br />
               <br />
               Profissional em transição de carreira para Tecnologia, com formação em Análise e Desenvolvimento de
-              Sistemas e experiência de décadas em trabalho, empreendedorismo, atendimento a clientes, gestão
+              Sistemas e experiência profissional construída ao longo de décadas de trabalho, empreendedorismo,
+              atendimento a clientes, gestão
               operacional e resolução de problemas. Atualmente venho desenvolvendo projetos práticos utilizando Python,
               SQL, JavaScript,
               Flutter e Firebase, enquanto aprofundo meus conhecimentos em programação, dados e inteligência artificial.
@@ -208,13 +209,6 @@ function App() {
                   <p className="project-card__subtitle">{project.subtitle}</p>
                   <h3>{project.title}</h3>
 
-                  {project.title === 'KeroPro' && (
-                    <p className="project-card__note">
-                      Projeto acadêmico inicialmente desenvolvido na FACENS e posteriormente retomado e evoluído no
-                      contexto da +praTi.
-                    </p>
-                  )}
-
                   <h4>Problema</h4>
                   <p>{project.problem}</p>
 
@@ -276,7 +270,10 @@ function App() {
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">Transição para Tecnologia</span>
-                <p>Projetos práticos, desenvolvimento em equipe e aperfeiçoamento contínuo em programação, dados e IA.</p>
+                <p>
+                  Projetos práticos, desenvolvimento em equipe e aperfeiçoamento contínuo em programação, dados e
+                  inteligência artificial.
+                </p>
               </div>
             </div>
 
