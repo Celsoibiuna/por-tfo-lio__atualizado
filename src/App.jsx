@@ -258,7 +258,7 @@ function App() {
             <div className="trajectory-timeline">
               <div className="timeline-item">
                 <span className="timeline-step">Experiência profissional</span>
-                <p>Décadas de trabalho com atendimento, negociação, operação, gestão e resolução de problemas.</p>
+                <p>Trajetória construída ao longo de décadas de trabalho, com experiência em atendimento, negociação, operação, gestão e resolução de problemas.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">Empreendedorismo no ramo automotivo</span>
@@ -310,8 +310,8 @@ function App() {
           </div>
 
           <p className="contact__intro">
-            Estou aberto a oportunidades na área de Tecnologia, especialmente em posições de Analista de Sistemas Júnior
-            e áreas relacionadas a dados e desenvolvimento de software.
+            Estou aberto a oportunidades na área de Tecnologia, especialmente para posições de Analista de Sistemas Júnior,
+            Analista de Dados Júnior e áreas relacionadas a desenvolvimento de software.
           </p>
 
           <div className="contact__list" aria-label="Redes sociais e contatos">
