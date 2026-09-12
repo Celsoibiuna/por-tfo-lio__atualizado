@@ -23,7 +23,7 @@ const projects = [
     role:
       'Idealizador do projeto e participante do desenvolvimento em equipe. Contribuí para a definição da solução, discussão de requisitos e evolução do projeto.',
     learning:
-      'O projeto ampliou minha compreensão sobre requisitos, regras de negócio, diferentes perfis de usuários, geolocalização, banco de dados e integração entre funcionalidades. Também reforçou a importância da comunicação e colaboração no desenvolvimento em equipe.',
+      'O projeto ampliou minha compreensão sobre requisitos, regras de negócio, diferentes perfis de usuários, geolocalização, banco de dados e integração entre funcionalidades. Também reforçou a importância da comunicação, organização e colaboração no desenvolvimento em equipe.',
   },
   {
     number: '02',
@@ -32,7 +32,7 @@ const projects = [
     problem:
       'A gestão do transporte público precisa lidar com situações que mudam constantemente, como concentração de passageiros, alterações na demanda e problemas na frota.',
     solution:
-      'O UrbiTech é um projeto conceitual relacionado à mobilidade urbana. A proposta considera informações provenientes de sensores e câmeras para identificar situações como concentração de passageiros em pontos de ônibus, alterações na demanda e problemas na frota, podendo gerar alertas para apoiar decisões do gestor, como avaliar o envio de outro ônibus.',
+      'O UrbiTech é um projeto conceitual relacionado à mobilidade urbana. A proposta considera informações provenientes de sensores e câmeras para identificar situações como concentração de passageiros em pontos de ônibus, alterações na demanda e problemas na frota. A partir dessas informações, o sistema poderia gerar alertas para apoiar decisões do gestor, como avaliar o envio de outro ônibus para determinada região.',
     technologies: 'Python • Modelagem de Dados • Regras de Negócio • Análise de Dados • Conceitos de Análise e Predição',
     role:
       'Idealizador/contribuidor da proposta e participante do desenvolvimento em equipe, com contribuição na concepção da solução e na definição de sua lógica.',
@@ -78,7 +78,7 @@ const journeyHighlights = [
   {
     title: 'Formatura com Tiago Henrique',
     image: formaturaImage,
-    description: '06/08/2026 — momento especial em família e conquista compartilhada.',
+    description: '06/08/2026 — momento especial de conquista e celebração junto à família.',
   },
 ]
 
@@ -175,8 +175,8 @@ function App() {
             <div className="about-card">
               <p>
                 Essa vivência me proporcionou uma visão prática de processos, necessidades de negócio e experiência do
-                usuário. Tenho uma postura analítica e ponderada, valorizando a escuta ativa para compreender cenários
-                antes de propor decisões e soluções.
+                usuário. Desenvolvi uma postura analítica e ponderada, valorizando a escuta e a compreensão dos
+                cenários antes de propor decisões e soluções.
               </p>
             </div>
 
@@ -185,10 +185,10 @@ function App() {
                 Concluí a graduação em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Facens e sigo me
                 aprimorando em programação, dados e inteligência artificial. Durante minha formação, participei e
                 desenvolvi projetos práticos em diferentes formatos. Também utilizo ferramentas de inteligência
-                artificial como apoio aos estudos e ao desenvolvimento, sem substituir a compreensão dos problemas e
-                das soluções. Hoje, busco unir experiência profissional, formação em tecnologia e capacidade de
-                aprender continuamente para compreender problemas, analisar necessidades e contribuir para a
-                construção de soluções.
+                artificial como apoio aos estudos e ao desenvolvimento, buscando compreender os problemas, as soluções
+                e as tecnologias utilizadas. Hoje, busco unir minha experiência profissional, minha formação em
+                Tecnologia e minha capacidade de aprendizado contínuo para compreender problemas, analisar necessidades
+                e contribuir para a construção de soluções.
               </p>
             </div>
           </div>
@@ -264,11 +264,11 @@ function App() {
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">FACENS — ADS</span>
-                <p>Formação em Análise e Desenvolvimento de Sistemas, com participação em projetos acadêmicos.</p>
+                <p>Formação em Análise e Desenvolvimento de Sistemas, com participação e desenvolvimento de projetos acadêmicos.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">Projetos acadêmicos</span>
-                <p>Idealização e participação em projetos acadêmicos, incluindo KeroPro, UrbiTech e Reino Defense, desenvolvidos em diferentes contextos e formatos.</p>
+                <p>Participação e desenvolvimento de projetos acadêmicos em diferentes formatos, incluindo KeroPro, UrbiTech e Reino Defense.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">+praTi</span>
@@ -277,8 +277,8 @@ function App() {
               <div className="timeline-item">
                 <span className="timeline-step">Transição para Tecnologia</span>
                 <p>
-                  Projetos práticos, desenvolvimento em equipe e aperfeiçoamento contínuo em programação, dados e
-                  inteligência artificial.
+                  Desenvolvimento de projetos práticos em diferentes formatos e aperfeiçoamento contínuo em
+                  programação, dados e Inteligência Artificial.
                 </p>
               </div>
             </div>
