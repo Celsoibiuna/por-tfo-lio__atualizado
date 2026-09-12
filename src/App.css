@@ -217,6 +217,54 @@
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(14, 116, 144, 0.1));
 }
 
+.trajectory-wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.trajectory-timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 18px 18px 18px 20px;
+  border-left: 2px solid rgba(125, 211, 252, 0.6);
+  background: rgba(15, 23, 42, 0.52);
+  border-radius: 0 16px 16px 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7dd3fc;
+  box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.18);
+}
+
+.timeline-step {
+  display: block;
+  margin-bottom: 8px;
+  color: #bae6fd;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: #dbeafe;
+  line-height: 1.7;
+}
+
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
@@ -254,6 +302,11 @@
   letter-spacing: 0.12em;
 }
 
+.project-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-card__subtitle {
   margin-bottom: 8px;
   color: #7dd3fc;
@@ -269,13 +322,22 @@
   font-size: 1.45rem;
 }
 
+.project-card h4 {
+  margin: 18px 0 8px;
+  color: #bae6fd;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .project-card p {
+  margin: 0;
   color: #dbeafe;
   line-height: 1.7;
 }
 
-.project-card__concepts {
-  margin-top: 18px;
+.project-card__note {
+  margin-bottom: 6px;
   color: #bae6fd !important;
   font-size: 0.9rem;
 }
@@ -324,6 +386,14 @@
   padding-bottom: 30px;
 }
 
+.contact__intro {
+  max-width: 700px;
+  margin: 0 0 22px;
+  color: #dbeafe;
+  line-height: 1.8;
+  font-size: 1.06rem;
+}
+
 .contact__list {
   display: flex;
   flex-wrap: wrap;
@@ -367,7 +437,8 @@
   .hero,
   .about-grid,
   .highlights-grid,
-  .projects-grid {
+  .projects-grid,
+  .trajectory-wrapper {
     grid-template-columns: 1fr;
   }
 
