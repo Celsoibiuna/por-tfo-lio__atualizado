@@ -72,9 +72,9 @@ const projects = [
 
 const journeyHighlights = [
   {
-    title: 'Celso na banca acadêmica',
+    title: 'Campinas Innovation Week — 11ª edição',
     image: bancaCelsoImage,
-    description: 'Registro de um momento de apresentação acadêmica e evolução profissional.',
+    description: 'Registro de um evento do qual participei durante minha trajetória de formação e evolução profissional.',
   },
   {
     title: 'Projeto para banca na Facens',
