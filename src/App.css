@@ -57,15 +57,17 @@
   font-size: 0.96rem;
   font-weight: 600;
   opacity: 0.8;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
   padding: 0.45rem 0.7rem;
   border-radius: 999px;
 }
 
 .nav a:hover {
   opacity: 1;
+  color: #7dd3fc;
   background: rgba(125, 211, 252, 0.08);
   transform: translateY(-1px);
+  text-shadow: 0 0 14px rgba(125, 211, 252, 0.45);
 }
 
 .hero {
@@ -156,6 +158,7 @@
 
 .button:hover {
   transform: translateY(-1px);
+  filter: brightness(1.08);
 }
 
 .button--primary {
@@ -422,6 +425,7 @@
 
 .contact__link:hover {
   transform: translateY(-1px);
+  color: #7dd3fc;
   border-color: rgba(125, 211, 252, 0.7);
   box-shadow: 0 12px 22px rgba(37, 99, 235, 0.2);
 }
