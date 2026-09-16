@@ -1,13 +1,31 @@
 import './App.css'
-import profileImage from './assets/foto Celso.png'
+import profileImage from './assets/foto_do_celso.jpg'
 import bancaCelsoImage from './assets/foto Celso banca.png'
 import facensImage from './assets/facens-banca.jpeg'
-import formaturaImage from './assets/formatura-tiago-06082026.png'
+import graduationVideo from './assets/video_formatura.mp4'
 import githubIcon from './assets/github.png'
 import linkedinIcon from './assets/linkedin.png'
 import whatsappIcon from './assets/whats verde.png'
 
-const skills = ['Python', 'SQL', 'JavaScript', 'Flutter', 'Firebase', 'Git/GitHub']
+const skills = ['JavaScript', 'Python', 'SQL', 'React', 'Flutter', 'Git']
+
+const knowledge = [
+  'JavaScript',
+  'Python',
+  'SQL',
+  'HTML',
+  'CSS',
+  'React',
+  'Flutter',
+  'Dart',
+  'Firebase',
+  'Git',
+  'GitHub',
+  'Banco de Dados',
+  'Modelagem de Dados',
+  'Levantamento de Requisitos',
+  'Regras de Negócio',
+]
 
 const projects = [
   {
@@ -17,14 +35,14 @@ const projects = [
     problem:
       'Encontrar profissionais para serviços técnicos pode ser um processo pouco organizado, principalmente quando existe necessidade de rapidez, localização e confiança entre cliente e profissional.',
     solution:
-      'O KeroPro foi idealizado como uma plataforma que conecta clientes a profissionais de serviços sob demanda. A solução considera disponibilidade, localização, solicitação de atendimento e acompanhamento do deslocamento em tempo real, além de diferentes níveis de urgência, autenticação, certificados, avaliações e pontuação.',
+      'A versão atual do KeroPro, desenvolvida no programa +praTi, é uma aplicação com backend em Java e Spring Boot, banco de dados MySQL e frontend web. O projeto conecta usuários a profissionais, considerando disponibilidade, solicitação de serviços, geolocalização, avaliações e organização das informações.',
     evolution:
-      'Inicialmente idealizado por mim durante minha formação na FACENS, o projeto teve uma primeira versão acadêmica desenvolvida por uma equipe de cinco pessoas. Posteriormente, foi retomado e evoluído no contexto da +praTi, em uma equipe de sete pessoas no total, com revisão da proposta, dos requisitos e das possibilidades de aplicação.',
-    technologies: 'Flutter • Dart • Firebase • Google Maps API • Git/GitHub • keropro-api',
+      'Inicialmente desenvolvido durante minha formação em ADS, o projeto teve uma primeira versão acadêmica com Flutter, Dart, Firebase e Google Maps API. Posteriormente, foi retomado e evoluído no programa +praTi, em uma equipe colaborativa, com revisão da proposta, dos requisitos e das possibilidades de aplicação.',
+    technologies: 'Java • Spring Boot • MySQL • Frontend web • Git • GitHub',
     role:
       'Idealizador do projeto e participante do desenvolvimento em equipe. Contribuí para a definição da solução, discussão de requisitos e evolução do projeto.',
     learning:
-      'O projeto ampliou minha compreensão sobre requisitos, regras de negócio, diferentes perfis de usuários, geolocalização, banco de dados e integração entre funcionalidades. Também reforçou a importância da comunicação, organização e colaboração no desenvolvimento em equipe.',
+      'O projeto ampliou minha compreensão sobre levantamento e discussão de requisitos, regras de negócio, usuários, disponibilidade de profissionais, solicitação de serviços, geolocalização, avaliações e banco de dados. Também reforçou a importância da comunicação, organização e colaboração no desenvolvimento de software.',
   },
   {
     number: '02',
@@ -56,17 +74,30 @@ const projects = [
   },
   {
     number: '04',
-    title: 'Celsoflix',
+    title: 'CelsoFlix',
     subtitle: 'Aplicação Web Responsiva',
     problem:
       'Criar uma interface web inspirada em plataformas de streaming, com organização de conteúdo e experiência adequada a diferentes tamanhos de tela.',
     solution:
       'O Celsoflix é uma aplicação web responsiva com elementos de interface inspirados em serviços de streaming, incluindo organização visual de conteúdos, carrosséis e interações dinâmicas.',
-    technologies: 'HTML5 • CSS3 • JavaScript • React • Vercel',
+    technologies: 'HTML • CSS • JavaScript • React',
     role:
       'Desenvolvimento individual do projeto, com foco na construção da interface web, responsividade, organização dos componentes e implementação das interações.',
     learning:
       'O projeto permitiu praticar desenvolvimento web responsivo, JavaScript, manipulação do DOM, organização de componentes, utilização de React, implementação de interações e organização de uma aplicação web.',
+  },
+  {
+    number: '05',
+    title: 'CelsoGames',
+    subtitle: 'Projeto web acadêmico',
+    problem:
+      'Organizar diferentes conteúdos e funcionalidades em uma experiência web clara, permitindo que o usuário navegue e interaja com a aplicação.',
+    solution:
+      'O CelsoGames foi desenvolvido individualmente durante minha formação em ADS, com foco em desenvolvimento web, organização de conteúdo e funcionalidades para interação do usuário.',
+    technologies: 'HTML • CSS • JavaScript',
+    role: 'Desenvolvimento individual do projeto, com foco na estrutura da interface, organização dos conteúdos e implementação das interações.',
+    learning:
+      'O projeto fortaleceu minha prática em desenvolvimento web, estruturação de páginas, organização de informações e criação de funcionalidades voltadas à interação do usuário.',
   },
 ]
 
@@ -80,12 +111,6 @@ const journeyHighlights = [
     title: 'Projeto para banca na Facens',
     image: facensImage,
     description: 'Momento marcante de apresentação acadêmica e evolução profissional.',
-  },
-  {
-    title: 'Formatura com Tiago Henrique',
-    image: formaturaImage,
-    description: '06/08/2026 — momento especial de conquista e celebração junto à família.',
-    url: 'https://www.linkedin.com/feed/update/urn:li:activity:7491511975617695744/',
   },
 ]
 
@@ -107,6 +132,7 @@ function App() {
         <nav className="nav" aria-label="Navegação principal">
           <a href="#inicio">Início</a>
           <a href="#sobre">Sobre</a>
+          <a href="#conhecimentos">Conhecimentos</a>
           <a href="#projetos">Projetos</a>
           <a href="#trajetoria">Trajetória</a>
           <a href="#contato">Contato</a>
@@ -124,21 +150,13 @@ function App() {
 
             <p className="lead">
               <strong>
-                Análise de Sistemas <span className="lead__separator">•</span> Dados{' '}
-                <span className="lead__separator">•</span> Projetos de Software
+                TECNOLOGIA <span className="lead__separator">•</span> DESENVOLVIMENTO{' '}
+                <span className="lead__separator">•</span> DADOS <span className="lead__separator">•</span> SOLUÇÕES
               </strong>
               <br />
               <br />
-              Profissional em transição de carreira para Tecnologia, com formação em Análise e Desenvolvimento de
-              Sistemas e experiência profissional construída ao longo de décadas de trabalho, empreendedorismo,
-              atendimento a clientes, gestão
-              operacional e resolução de problemas. Atualmente, desenvolvo projetos práticos utilizando Python, SQL,
-              JavaScript, Flutter e Firebase, enquanto continuo aprofundando meus conhecimentos em programação, dados e
-              Inteligência Artificial.
-              <br />
-              <br />
-              Minha experiência profissional também me permite trazer uma visão prática de processos, necessidades dos
-              usuários, regras de negócio e resolução de problemas.
+              Profissional de Tecnologia em início de carreira, com experiência em projetos de software, desenvolvimento
+              web e mobile, dados e resolução de problemas.
             </p>
 
             <div className="hero__badges" aria-label="Principais habilidades">
@@ -173,31 +191,48 @@ function App() {
           <div className="about-grid">
             <div className="about-card">
               <p>
-                Minha trajetória profissional começou ainda jovem, passando por experiências em ambiente corporativo,
-                serviços automotivos e empreendedorismo. Ao longo desse caminho, desenvolvi experiência com atendimento,
-                operação, negociação, gestão de pessoas e resolução de problemas.
+                Sou Tecnólogo em Análise e Desenvolvimento de Sistemas pela Facens e estou construindo minha carreira na
+                área de Tecnologia.
+              </p>
+              <p>
+                Minha trajetória profissional inclui experiência com empreendedorismo, atendimento a clientes, gestão de
+                equipe, processos, negociação e resolução de problemas. Essa experiência contribui para uma visão prática
+                de negócio e compreensão das necessidades dos usuários.
               </p>
             </div>
 
             <div className="about-card">
               <p>
-                Essa vivência me proporcionou uma visão prática de processos, necessidades de negócio e experiência do
-                usuário. Desenvolvi uma postura analítica e ponderada, valorizando a escuta e a compreensão dos
-                cenários antes de propor decisões e soluções.
+                Durante minha formação, participei e desenvolvi projetos web, mobile e conceituais, envolvendo levantamento
+                de requisitos, regras de negócio, banco de dados e desenvolvimento de software.
+              </p>
+              <p>
+                Atualmente, participo do programa Dev. Full Stack Jr. (+praTi &amp; Codifica), ampliando meus conhecimentos
+                por meio de projetos práticos e trabalho colaborativo.
               </p>
             </div>
 
             <div className="about-card about-card--highlight">
               <p>
-                Concluí a graduação em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Facens e sigo me
-                aprimorando em programação, dados e inteligência artificial. Durante minha formação, participei e
-                desenvolvi projetos práticos em diferentes formatos. Também utilizo ferramentas de inteligência
-                artificial como apoio aos estudos e ao desenvolvimento, buscando compreender os problemas, as soluções
-                e as tecnologias utilizadas. Hoje, busco unir minha experiência profissional, minha formação em
-                Tecnologia e minha capacidade de aprendizado contínuo para compreender problemas, analisar necessidades
-                e contribuir para a construção de soluções.
+                Estou aberto a novas oportunidades na área de Tecnologia, buscando aplicar meus conhecimentos, aprender
+                continuamente e contribuir para a construção de soluções.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="section knowledge-section" id="conhecimentos">
+          <div className="section__heading">
+            <p className="eyebrow">Base de conhecimentos</p>
+            <h2>Tecnologias e conhecimentos</h2>
+          </div>
+
+          <div className="knowledge-grid">
+            {knowledge.map((item) => (
+              <span key={item} className="badge">
+                {item}
+              </span>
+            ))}
           </div>
         </section>
 
@@ -206,6 +241,10 @@ function App() {
             <p className="eyebrow">Projetos em destaque</p>
             <h2>Soluções pensadas a partir de problemas reais</h2>
           </div>
+
+          <p className="projects__intro">
+            Projetos desenvolvidos durante minha formação e experiências de aprendizagem em Tecnologia.
+          </p>
 
           <div className="projects-grid">
             {projects.map((project) => (
@@ -279,13 +318,14 @@ function App() {
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">+praTi</span>
-                <p>Retomada e evolução do KeroPro em um novo contexto de aprendizagem e prática profissional.</p>
+                <p>Participante — Programa Dev. Full Stack Jr. | Desenvolvimento de Software. Abril de 2026 — atual.</p>
+                <p>Participação em projeto colaborativo, evolução do KeroPro, discussão de requisitos, regras de negócio, definição e organização de funcionalidades, Git, GitHub e trabalho em equipe.</p>
               </div>
               <div className="timeline-item">
                 <span className="timeline-step">Transição para Tecnologia</span>
                 <p>
-                  Desenvolvimento de projetos práticos em diferentes formatos e aperfeiçoamento contínuo em
-                  programação, dados e Inteligência Artificial.
+                  Desenvolvimento de projetos práticos em diferentes formatos e aperfeiçoamento contínuo em programação,
+                  dados, banco de dados e desenvolvimento de software.
                 </p>
               </div>
             </div>
@@ -317,6 +357,22 @@ function App() {
                   </div>
                 </article>
               ))}
+              <article className="highlight-card">
+                <video
+                  className="highlight-card__video"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  aria-label="Vídeo da formatura de Celso Batista"
+                >
+                  <source src={graduationVideo} type="video/mp4" />
+                  Seu navegador não suporta a reprodução de vídeo.
+                </video>
+                <div className="highlight-card__content">
+                  <h3>Vídeo da formatura</h3>
+                  <p>Registro em vídeo da conclusão da formação em Análise e Desenvolvimento de Sistemas.</p>
+                </div>
+              </article>
             </div>
           </div>
         </section>
@@ -328,8 +384,8 @@ function App() {
           </div>
 
           <p className="contact__intro">
-            Estou aberto a oportunidades na área de Tecnologia, especialmente para posições de Analista de Sistemas Júnior,
-            Analista de Dados Júnior e áreas relacionadas a desenvolvimento de software.
+            Estou aberto a oportunidades e diferentes caminhos na área de Tecnologia, buscando contribuir com projetos,
+            aprender continuamente e aplicar minha formação, meus conhecimentos e minha experiência profissional.
           </p>
 
           <div className="contact__list" aria-label="Redes sociais e contatos">

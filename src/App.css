@@ -233,8 +233,25 @@
   box-shadow: 0 0 22px rgba(56, 189, 248, 0.22), 0 18px 34px rgba(15, 23, 42, 0.28);
 }
 
+.about-card p + p {
+  margin-top: 18px;
+}
+
 .about-card--highlight {
   background: rgba(15, 23, 42, 0.6);
+}
+
+.knowledge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.projects__intro {
+  max-width: 700px;
+  margin: -8px 0 28px;
+  color: #dbeafe;
+  line-height: 1.8;
 }
 
 .trajectory-wrapper {
@@ -400,6 +417,15 @@
   background: rgba(15, 23, 42, 0.64);
   padding: 12px;
   box-sizing: border-box;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.highlight-card__video {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+  display: block;
+  background: rgba(15, 23, 42, 0.64);
   border-bottom: 1px solid rgba(148, 163, 184, 0.14);
 }
 
