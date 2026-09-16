@@ -1,7 +1,7 @@
 import './App.css'
 import profileImage from './assets/foto_do_celso.jpg'
 import bancaCelsoImage from './assets/foto Celso banca.png'
-import facensImage from './assets/facens-banca.jpeg'
+import facensImage from './assets/foto-banca.png'
 import videoPoster from './assets/foto_celso.png'
 import graduationVideo from './assets/video_formatura.mp4'
 import githubIcon from './assets/github.png'
