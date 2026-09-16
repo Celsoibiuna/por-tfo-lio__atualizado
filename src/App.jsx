@@ -2,6 +2,7 @@ import './App.css'
 import profileImage from './assets/foto_do_celso.jpg'
 import bancaCelsoImage from './assets/foto Celso banca.png'
 import facensImage from './assets/facens-banca.jpeg'
+import videoPoster from './assets/foto_celso.png'
 import graduationVideo from './assets/video_formatura.mp4'
 import githubIcon from './assets/github.png'
 import linkedinIcon from './assets/linkedin.png'
@@ -360,6 +361,7 @@ function App() {
               <article className="highlight-card">
                 <video
                   className="highlight-card__video"
+                  poster={videoPoster}
                   controls
                   playsInline
                   preload="metadata"
