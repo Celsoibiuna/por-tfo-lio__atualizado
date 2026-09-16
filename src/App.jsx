@@ -372,7 +372,7 @@ function App() {
                 </video>
                 <div className="highlight-card__content">
                   <h3>Vídeo da formatura</h3>
-                  <p>Registro em vídeo da conclusão da formação em Análise e Desenvolvimento de Sistemas.</p>
+                  <p>Registro em vídeo da conclusão da formação em Análise e Desenvolvimento de Sistemas, pai e filho.</p>
                 </div>
               </article>
             </div>
